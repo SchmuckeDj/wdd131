@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominican Republic</title>
+  <meta name="description" content="Country page about the Dominican Republic">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Dominican Republic</h1>
+</header>
+
+<main>
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <img src="images/hero-small.jpg" alt="Beach in Dominican Republic">
+    </picture>
+  </section>
+
+  <section class="info">
+    <h2>About</h2>
+    <p>
+      The Dominican Republic is located in the Caribbean and is known for its
+      beautiful beaches, rich culture, music, and warm people.
+    </p>
+  </section>
+
+  <section class="weather">
+    <h2>Weather</h2>
+
+    <div class="weather-content">
+      
+
+      <ul>
+        <li>Temperature: <span id="temperature">9</span> °C</li>
+        <li>Wind Speed: <span id="wind">10</span> km/h</li>
+        <li>Wind Chill: <span id="windchill"></span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> | Jose Diaz | Dominican Republic
+  </p>
+  <p>
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+
+</body>
+</html>
