@@ -1,0 +1,81 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+html, body, header, nav, main, footer, button, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+  background-color: #1f4e79;
+  color: white;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✖";
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+}
+
+.navigation a {
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #163a5f;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+main {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+
+footer {
+  background-color: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
