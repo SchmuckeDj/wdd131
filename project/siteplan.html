@@ -1,78 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="e-bike informational website.">
-    <title>E-Bike Explorer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VOLTR Electric Bikes — Explore premium electric commuter, mountain, and cargo e-bikes. Find the perfect model for your lifestyle and get a free consultation today.">
+  <title>VOLTR — Premium Electric Bikes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
 </head>
-
 <body>
-    <header>
-        <h1>E-Bike Explorer</h1>
-        <p>Website Planning Document</p>
-    </header>
 
-    <main>
-        <section>
-    
-    <p>
-        <strong>E-Bike Explorer</strong> was chosen because the website aims to help users explore the world of electric bicycles.
-        The name reflects the objective of providing clear information, guidance, and recommendations about different types
-        of e-bikes, allowing visitors to better understand and choose the option that best fits their needs.
-    </p>
-</section>
+  <!-- NAVIGATION -->
+  <nav aria-label="Main navigation">
+    <a href="#" class="logo">VOLT<span>R</span></a>
+    <ul class="nav-links">
+      <li><a href="#types">Models</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-bg-text" aria-hidden="true">VOLTR</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Next-gen Electric Mobility</p>
+      <h1>Ride the<br><em>Future.</em></h1>
+      <p class="hero-sub">Premium electric bikes engineered for performance, built for life. Find the model that matches your world.</p>
+      <div class="hero-actions">
+        <a href="#types" class="btn-primary">Explore Models</a>
+        <a href="#contact" class="btn-ghost">Get a Quote</a>
+      </div>
+    </div>
+    <div class="hero-stats" aria-label="Key specifications">
+      <div class="stat-item">
+        <span class="stat-num">120<abbr title="kilometers">km</abbr></span>
+        <span class="stat-label">Max Range</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">45<abbr title="kilometers per hour">km/h</abbr></span>
+        <span class="stat-label">Top Speed</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3<abbr title="years">yr</abbr></span>
+        <span class="stat-label">Warranty</span>
+      </div>
+    </div>
+  </header>
 
-        <section>
-           
-            <p>
-                The purpose of this website is to inform users about electric bicycles by explaining the different types
-                of e-bikes, their benefits, and providing basic buying recommendations to help beginners and enthusiasts
-                make informed decisions.
-            </p>
-        </section>
+  <main>
 
+    <!-- BIKE TYPES SECTION -->
+    <section id="types" aria-labelledby="types-heading">
+      <span class="section-tag">Our Models</span>
+      <h2 id="types-heading" class="section-title">Choose<br>Your Ride</h2>
+      <div id="bike-list" role="list" aria-label="Electric bike models"></div>
+    </section>
 
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <dl>
-                <dt><strong>What type of e-bike is best for city commuting?</strong></dt>
-                <dd>
-                    For city commuting, a **hybrid or commuter e-bike** with a comfortable upright riding position,
-                    reliable brakes, and integrated lights is ideal. These bikes are designed for urban streets and
-                    short to medium distances.
-                </dd>
+    <!-- GALLERY SECTION -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <span class="section-tag">Gallery</span>
+      <h2 id="gallery-heading" class="section-title">Built to<br>Inspire</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img
+            src="https://uxdividemos.com/wp-content/uploads/2025/05/bicycle-3-compressor_35bdfca6-184b-432b-a34e-e2f91a3dab53.jpg"
+            alt="A sleek electric commuter bike ready for city riding"
+            loading="lazy"
+            width="800"
+            height="600">
+          <figcaption class="gallery-label">Commuter Series</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="https://uxdividemos.com/wp-content/uploads/2025/05/bicycle-2-compressor_49b2849b-a72a-454c-907a-8e8da4d4f35d.jpg"
+            alt="A rugged electric mountain bike on an off-road trail"
+            loading="lazy"
+            width="800"
+            height="600">
+          <figcaption class="gallery-label">Mountain Series</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="https://uxdividemos.com/wp-content/uploads/2025/05/bicycle33-compressor_5dacd597-ddfb-4921-8f3b-f2dba878eacc.webp"
+            alt="A heavy-duty electric cargo bike loaded with supplies"
+            loading="lazy"
+            width="800"
+            height="600">
+          <figcaption class="gallery-label">Cargo Series</figcaption>
+        </figure>
+      </div>
+    </section>
 
-                <dt><strong>How much does a good electric bike cost?</strong></dt>
-                <dd>
-                    A good quality electric bike typically ranges from **$1,000 to $3,000 USD**. Entry-level models may
-                    be cheaper, while premium bikes with advanced motors and higher battery capacity can cost $4,000 or
-                    more.
-                </dd>
+    <!-- CONTACT SECTION -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="contact-layout">
 
-                <dt><strong>Are e-bikes good for long-distance rides?</strong></dt>
-                <dd>
-                    Yes, e-bikes can be excellent for long-distance rides **if they have a larger battery capacity** and
-                    comfortable geometry. Touring e-bikes and cargo e-bikes with extended range batteries are especially
-                    suitable for long rides.
-                </dd>
-            </dl>
-        </section>
+        <div class="contact-info">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Let's Find<br>Your Bike</h2>
+          <p>Tell us what you're looking for and our specialists will craft a personalized recommendation — no pressure, just expertise.</p>
+          <ul class="contact-features" aria-label="Our promises">
+            <li class="contact-feature">
+              <span class="icon" aria-hidden="true">⚡</span>
+              <div class="feat-text">
+                <h3>Free Consultation</h3>
+                <p>Expert guidance tailored to your needs</p>
+              </div>
+            </li>
+            <li class="contact-feature">
+              <span class="icon" aria-hidden="true">🚴</span>
+              <div class="feat-text">
+                <h3>Test Ride Available</h3>
+                <p>Experience the bike before you commit</p>
+              </div>
+            </li>
+            <li class="contact-feature">
+              <span class="icon" aria-hidden="true">🛡️</span>
+              <div class="feat-text">
+                <h3>3-Year Warranty</h3>
+                <p>Complete peace of mind coverage included</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
+        <!-- HTML FORM -->
+        <div class="contact-form-wrap">
+          <form id="contactForm" novalidate aria-label="Contact request form">
 
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                autocomplete="name"
+                required
+                aria-required="true">
+            </div>
 
-    </main>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+                aria-required="true">
+            </div>
 
-    <footer>
-        <p>&copy; 2026 E-Bike Explorer</p>
-    </footer>
+            <div class="form-group">
+              <label for="interest">Interested In</label>
+              <div class="select-wrap">
+                <select id="interest" name="interest" aria-required="true">
+                  <option value="" disabled selected>Select a model</option>
+                  <option value="Commuter">Commuter</option>
+                  <option value="Mountain">Mountain</option>
+                  <option value="Cargo">Cargo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="optional">(optional)</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Tell us more about what you need..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Send Request →</button>
+          </form>
+
+          <p id="formMessage" role="alert" aria-live="polite"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="logo">VOLT<span>R</span></a>
+    <p>&copy; 2026 VOLTR Electric Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/siteplan.js"></script>
 </body>
-
 </html>
